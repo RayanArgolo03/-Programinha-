@@ -9,7 +9,7 @@
 
 <h2 id="sobre"> 📚 Sobre o projeto </h2>
  
-Projeto em grupo do curso **Programadores Cariocas**. Criação de um site com Bootstrap, Jquery, verificador de CEP. Site que disponibilza cursos para crianças. Você pode acessá-lo aqui: https://diogoconcei.github.io/Projeto-Emunah/ 
+Projeto em grupo do curso **Programadores Cariocas**. Criação de um site com Bootstrap, Jquery, verificador de CEP. Site que disponibilza cursos para crianças. Você pode acessá-lo aqui: https://rayanargolo03.github.io/-Programinha-/ 
 
 
 <h2 id="tecnologias"> ✔️ Tecnologias Utilizadas </h2>
