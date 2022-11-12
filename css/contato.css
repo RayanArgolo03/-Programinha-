@@ -1,0 +1,799 @@
+/* Fontes */
+
+@import url("http://fonts.cdnfonts.com/css/gagalin");
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+/* Fim Fontes */
+
+
+/* Formatação Universal */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  text-decoration-color: none;
+}
+
+body {
+  background-image: url(../img/plano\ de\ fundo.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  font-size: 24px;
+  width: 100vw;
+  height: 100vh;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgba(11, 13, 12, 0.849);
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(15, 245, 15);
+  border-radius: 15px;
+}
+
+a {
+  color: white;
+  text-decoration: dashed;
+}
+
+button {
+  text-shadow: 2px 1px 0px rgba(0, 0, 0, 1);
+  font-family: 'Oswald', sans-serif;
+  font-size: 0.7em;
+  color: white;
+  border: dashed black 1px;
+  background-color: rgba(45, 247, 17, 255);
+  height: 45px;
+  width: 155px;
+  margin-top: 5%;
+}
+
+button:hover {
+  cursor: pointer;
+    background-color: lightgreen;
+    transition: 0.3s all;
+}
+
+/* Fim Formatação Universal */
+
+/* Nav */
+.nav1 {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav p {
+  text-shadow: 2px 1px 0px rgba(0, 0, 0, 1);
+  font-family: 'Bebas Neue', 'cursive';
+  font-size: 1.1em;
+  color: whitesmoke;
+}
+
+.logo {
+  height: 5vh;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-left: 6%;
+}
+
+.topicos {
+  width: 50%;
+  height: 5vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 6%;
+  margin-left: 21%;
+}
+
+nav p:hover {
+  transform: scale(1.1);
+  transition: 0.2s all;
+}
+
+
+.botoes {
+  width: 20%;
+  height: 3vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 10px;
+  margin-right: 5%;
+  margin-bottom: 1%;
+}
+
+/* Fim Nav */
+
+
+/* Main */
+main {
+  height: 90%;
+  width: 100%;
+}
+
+.container-conteudo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+
+}
+
+.conteudo {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  text-shadow: 2px 1px 0px rgba(0, 0, 0, 1);
+  font-family: 'Bebas Neue', 'cursive';
+  color: whitesmoke;
+  text-align: center;
+  font-size: 45px;
+  margin-bottom: 80px;
+}
+
+
+/* Programinha */
+.amarelo {
+  color: rgb(216, 216, 29);
+}
+
+.verde {
+  color: rgba(45, 247, 17, 255);
+  margin: 0;
+  padding: 0;
+}
+
+.rosa {
+  color: rgb(175, 73, 107);
+}
+
+.laranja {
+  color: rgb(211, 150, 37);
+}
+
+.azul {
+  color: rgb(41, 41, 204);
+}
+
+/*Fim Main e Fim Programinha */
+
+/* Menu */
+span#burguer {
+  display: none;
+}
+
+#itens {
+  display: flex;
+}
+
+/* Fim Menu */
+
+
+/* Media Screnn */
+
+.conteudo {
+  margin-bottom: 380px;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  margin-top: 100px;
+  display: flex;
+  width: 100%;
+  height: 80%;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+
+}
+
+.cards {
+  height: 100%;
+  width: 20%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.image {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.foto {
+  margin-top: 5px;
+  height: 190px;
+  width: 190px;
+  border-radius: 80%;
+  border: 3px solid rgba(6, 150, 6, 0.733);
+  box-shadow: 10px 11px 38px -11px rgba(28, 191, 28, 0.46);
+}
+
+.foto:hover {
+  height: 200px;
+  width: 200px;
+  border: 4px solid green;
+
+}
+
+.contato {
+  margin-top: 15px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 100%;
+  height: 13%;
+}
+
+.con {
+  height: 30px;
+  width: 30px;
+  border-radius: 100%;
+}
+
+.contato img:hover {
+  height: 35px;
+  width: 35px;
+  border: 2px solid green;
+
+
+}
+
+.nome {
+  margin-top: 3px;
+  width: 100%;
+  height: 10%;
+  text-align: center;
+  font-family: 'Amatic SC', cursive;
+  color: rgb(194, 244, 194);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h2 {
+  font-family: 'Amatic SC', cursive;
+  color: rgb(194, 244, 194);
+  font-size: 30px;
+
+}
+
+h3 {
+  font-size: 20px;
+  text-align: center;
+  font-family: 'Amatic SC', cursive;
+  color: rgb(215, 243, 223);
+}
+
+@media screen and (min-width: 320px) and (max-width:930px) {
+
+  .topicos {
+    display: none;
+    flex-direction: column;
+    position: relative;
+    left: 6%;
+    margin-top: 3%;
+    margin-right: 45%;
+  }
+
+  span#burguer {
+    display: flex;
+  }
+
+  #itens {
+    display: none;
+  }
+
+
+  .nav1 {
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  nav p {
+    font-size: 0.7em;
+  }
+
+  .logo {
+    width: 48px;
+    height: 48px;
+    position: absolute;
+  }
+
+  h1,
+  h2 {
+    font-size: 2em;
+  }
+
+  p {
+    margin: 3px;
+    font-size: 0.7em;
+    color: whitesmoke;
+  }
+
+  .botoes {
+    width: 20%;
+    justify-content: center;
+    position: absolute;
+    left: 68%;
+  }
+
+  section img {
+    height: 30vh;
+    width: 20vw;
+  }
+}
+
+@media only screen and (max-width:1214px) {
+  .topicos {
+      display: none;
+      flex-direction: row;
+      position: relative;
+      left: 6%;
+      margin-top: 3%;
+      margin-right: 45%;
+    }
+  
+    span#burguer {
+      display: flex;
+    }
+  
+    #itens {
+      display: none;
+    }
+  
+    .nav1 {
+      width: 100vw;
+      height: 10vh;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+  
+    }
+  
+    nav p {
+      font-size: 1em;
+  
+    }
+  
+    .logo {
+      width: 48px;
+      height: 48px;
+      position: absolute;
+    }
+  
+    .botoes {
+      width: 20%;
+      justify-content: center;
+      position: absolute;
+      left: 68%;
+    }
+  h1 {
+    font-size: 30px;
+  }
+
+  .foto {
+    margin-top: 5px;
+    height: 200px;
+    width: 200px;
+    border-radius: 80%;
+    border: 3px solid rgba(6, 150, 6, 0.733);
+    box-shadow: 10px 11px 38px -11px rgba(28, 191, 28, 0.46);
+  }
+
+}
+
+@media only screen and (max-width:1198px) {
+  .topicos {
+      display: none;
+      flex-direction: row;
+      position: relative;
+      left: 6%;
+      margin-top: 3%;
+      margin-right: 45%;
+    }
+  
+    span#burguer {
+      display: flex;
+    }
+  
+    #itens {
+      display: none;
+    }
+  
+    .nav1 {
+      width: 100vw;
+      height: 10vh;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+  
+    }
+  
+    nav p {
+      font-size: 1em;
+  
+    }
+  
+    .logo {
+      width: 48px;
+      height: 48px;
+      position: absolute;
+    }
+  
+    .botoes {
+      width: 20%;
+      justify-content: center;
+      position: absolute;
+      left: 68%;
+    }
+  h1 {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (max-width:1118px) {
+  .topicos {
+      display: none;
+      flex-direction: row;
+      position: relative;
+      left: 6%;
+      margin-top: 3%;
+      margin-right: 45%;
+    }
+  
+    span#burguer {
+      display: flex;
+    }
+  
+    #itens {
+      display: none;
+    }
+  
+    .nav1 {
+      width: 100vw;
+      height: 10vh;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+  
+    }
+  
+    nav p {
+      font-size: 1em;
+  
+    }
+  
+    .logo {
+      width: 48px;
+      height: 48px;
+      position: absolute;
+    }
+  
+    .botoes {
+      width: 20%;
+      justify-content: center;
+      position: absolute;
+      left: 68%;
+    }
+  h1 {
+    font-size: 30px;
+  }
+
+  .foto {
+    width: 170px;
+    height: 170px;
+  }
+}
+
+@media only screen and (max-width:967px) {
+  .topicos {
+      display: none;
+      flex-direction: row;
+      position: relative;
+      left: 6%;
+      margin-top: 3%;
+      margin-right: 45%;
+    }
+  
+    span#burguer {
+      display: flex;
+    }
+  
+    #itens {
+      display: none;
+    }
+  
+    .nav1 {
+      width: 100vw;
+      height: 10vh;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+  
+    }
+  
+    nav p {
+      font-size: 1em;
+  
+    }
+  
+    .logo {
+      width: 48px;
+      height: 48px;
+      position: absolute;
+    }
+  
+    .botoes {
+      width: 20%;
+      justify-content: center;
+      position: absolute;
+      left: 68%;
+    }
+  .foto {
+    height: 150px;
+    width: 150px;
+  }
+
+  h2 {
+    font-size: 25px;
+  }
+
+  h3 {
+    font-size: 15px;
+  }
+
+  .foto:hover {
+    height: 160px;
+    width: 160px;
+    border: 4px solid green;
+
+  }
+
+  .contato img:hover {
+    height: 30px;
+    width: 30px;
+    border: 2px solid green;
+
+
+  }
+}
+
+@media only screen and (max-width:799px) {
+  .topicos {
+      display: none;
+      flex-direction: row;
+      position: relative;
+      left: 6%;
+      margin-top: 3%;
+      margin-right: 45%;
+    }
+  
+    span#burguer {
+      display: flex;
+    }
+  
+    #itens {
+      display: none;
+    }
+  
+    .nav1 {
+      width: 100vw;
+      height: 10vh;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+  
+    }
+  
+    nav p {
+      font-size: 1em;
+  
+    }
+  
+    .logo {
+      width: 48px;
+      height: 48px;
+      position: absolute;
+    }
+  
+    .botoes {
+      width: 20%;
+      justify-content: center;
+      position: absolute;
+      left: 68%;
+    }
+  h1 {
+    font-size: 25px;
+  }
+
+  .foto {
+    height: 150px;
+    width: 150px;
+  }
+
+  .cards img:hover {
+    height: 150px;
+    width: 150px;
+    border: 4px solid green;
+
+  }
+
+  .contato img:hover {
+    height: 30px;
+    width: 30px;
+    border: 2px solid green;
+
+
+  }
+}
+
+@media only screen and (max-width:732px) {
+  .topicos {
+      display: none;
+      flex-direction: row;
+      position: relative;
+      left: 6%;
+      margin-top: 3%;
+      margin-right: 45%;
+    }
+  
+    span#burguer {
+      display: flex;
+    }
+  
+    #itens {
+      display: none;
+    }
+  
+    .nav1 {
+      width: 100vw;
+      height: 10vh;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+  
+    }
+  
+    nav p {
+      font-size: 1em;
+  
+    }
+  
+    .logo {
+      width: 48px;
+      height: 48px;
+      position: absolute;
+    }
+  
+    .botoes {
+      width: 20%;
+      justify-content: center;
+      position: absolute;
+      left: 68%;
+    }
+  body {
+    height: auto;
+    overflow: auto;
+  }
+
+  div.conteudo {
+    position: absolute;
+  }
+
+  .cards {
+    width: 100%;
+  }
+
+  .card {
+    display: block;
+    height: 60%;
+    overflow: auto;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+}
+
+@media only screen and (max-width:393) {
+  .topicos {
+      display: none;
+      flex-direction: row;
+      position: relative;
+      left: 6%;
+      margin-top: 3%;
+      margin-right: 45%;
+    }
+  
+    span#burguer {
+      display: flex;
+    }
+  
+    #itens {
+      display: none;
+    }
+  
+    .nav1 {
+      width: 100vw;
+      height: 10vh;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+  
+    }
+  
+    nav p {
+      font-size: 1em;
+  
+    }
+  
+    .logo {
+      width: 48px;
+      height: 48px;
+      position: absolute;
+    }
+  
+    .botoes {
+      width: 20%;
+      justify-content: center;
+      position: absolute;
+      left: 68%;
+    }
+
+  body {
+    height: auto;
+    overflow: auto;
+  }
+
+  div.conteudo {
+    position: absolute;
+  }
+
+  .cards {
+    width: 100%;
+  }
+
+  .card {
+    display: block;
+    height: 60%;
+    overflow: auto;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+}

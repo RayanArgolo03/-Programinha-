@@ -1,0 +1,919 @@
+/* Fontes */
+
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+/* Fim Fontes */
+
+/* Formatação Universal */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(../img/fundo-sobre-nos.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  backdrop-filter: brightness(70%);
+  font-size: 24px;
+  width: 100%;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+button {
+  text-shadow: 2px 1px 0px rgba(0, 0, 0, 1);
+  font-family: "Oswald", sans-serif;
+  font-size: 0.7em;
+  color: white;
+  border: dashed black 1px;
+  background-color: rgba(45, 247, 17, 255);
+  height: 45px;
+  width: 155px;
+  margin-top: 5%;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: lightgreen;
+  transition: 0.3s all;
+}
+
+/* Fim Formatação Universal */
+
+/* Nav */
+.nav1 {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav p {
+  text-shadow: 2px 1px 0px rgba(0, 0, 0, 1);
+  font-family: 'Bebas Neue', 'cursive';
+  font-size: 1.1em;
+  color: whitesmoke;
+}
+
+.logo {
+  height: 5vh;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-left: 6%;
+}
+
+.topicos {
+  width: 50%;
+  height: 5vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 6%;
+  margin-left: 21%;
+}
+
+nav p:hover {
+  transform: scale(1.1);
+  transition: 0.2s all;
+}
+
+.botoes {
+  width: 20%;
+  height: 3vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 10px;
+  margin-right: 5%;
+  margin-bottom: 1%;
+}
+
+span#burguer {
+  display: none;
+}
+
+#itens {
+  display: flex;
+}
+
+/* Programinha */
+.amarelo {
+  color: rgb(217, 255, 0);
+}
+
+.verde {
+  color: rgba(45, 247, 17, 255);
+  margin: 0;
+  padding: 0;
+}
+
+.rosa {
+  color: rgb(175, 73, 107);
+}
+
+.vermelho {
+  color: rgb(255, 0, 0);
+}
+
+.roxo {
+  color: rgba(234, 0, 255, 0.719);
+}
+
+.laranja {
+  color: rgb(253, 165, 0);
+}
+
+.corall {
+  color: coral;
+}
+
+.marrom {
+  color: rgb(134, 103, 34);
+}
+
+.azul {
+  color: rgb(95, 95, 202);
+}
+
+.verde-escuro {
+  color: rgb(97, 255, 208);
+}
+
+/* Main */
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.titulo-sobre-nos {
+  font-size: 2.3em;
+  font-family: "Oswald", sans-serif;
+  font-weight: 800;
+  color: white;
+  margin: 3% 1% 1% 25%;
+  text-shadow: 1px 0px 2px rgba(0, 0, 0, 1);
+}
+
+.container-sobre-nos {
+  width: 920px;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0% 1% 1% 24%;
+}
+
+.texto-sobre-nos {
+  margin: 1px;
+  text-indent: 1em;
+  font-size: 1.3em;
+  font-weight: 800;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: white;
+  text-shadow: 1px 0px 2px rgba(0, 0, 0, 1);
+}
+
+.segundo-paragrafo {
+  margin-top: 14px;
+}
+
+.container-titulo-cursos {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 300px;
+  margin-top: 7%;
+}
+
+.titulo-cursos {
+  width: 290px;
+  height: 40px;
+  font-size: 2.3em;
+  font-family: "Oswald", sans-serif;
+  font-weight: 800;
+  color: white;
+  text-shadow: 1px 0px 1px rgba(0, 0, 1, 1);
+  position: relative;
+}
+
+.linha-branca {
+  position: absolute;
+  width: 50px;
+  height: 5px;
+  background-color: white;
+  transition: 1s ease;
+}
+
+.linha-branca-beneficios {
+  width: 1%;
+  height: 5px;
+  background-color: rgb(255, 255, 255);
+  transition: 1s ease;
+}
+
+.container-cards {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  width: 100%;
+}
+
+.card-kids,
+.card-infantil,
+.card-prodigio {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1%;
+  border-radius: 100%;
+  width: 350px;
+  height: 470px;
+  background-color: rgb(0, 0, 0);
+  transition: 0.1s linear;
+}
+
+.card-prodigio:hover {
+  filter: brightness(110%);
+}
+
+.card-kids:hover {
+  filter: brightness(110%);
+}
+
+.card-infantil:hover {
+  filter: brightness(110%);
+}
+
+.card-kids {
+  background-size: cover;
+  background-position: center;
+  border-radius: 30px;
+  border: solid 2px rgba(8, 92, 61, 1);
+  filter: brightness(80%);
+  box-shadow: inset 0 60px 0px 0px rgb(24, 112, 24);
+}
+
+.card-infantil {
+  background-size: cover;
+  background-position: 40% 100%;
+  border-radius: 30px;
+  border: solid 2px rgb(231, 229, 229);
+  filter: brightness(80%);
+  box-shadow: inset 0 52px 0px 0px #e6dddd;
+}
+
+.card-prodigio {
+  background-size: cover;
+  background-position: center;
+  border-radius: 30px;
+  border: solid 2px rgba(249, 255, 0, 1);
+  filter: brightness(80%);
+  box-shadow: inset 0 60px 0px 0px #dfd222;
+}
+
+.titulo-card {
+  filter: brightness(120%);
+  text-shadow: 2px 1px 1px rgba(0, 0, 0, 1);
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.4em;
+  color: white;
+  position: absolute;
+  top: 40%;
+  left: 23%;
+}
+
+.titulo-javascript-card {
+  filter: brightness(120%);
+  text-shadow: 2px 1px 1px rgba(0, 0, 0, 1);
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.4em;
+  color: white;
+  position: absolute;
+  top: 40%;
+  left: 17%;
+}
+
+.titulo-card-htmlcss {
+  filter: brightness(120%);
+  text-shadow: 2px 1px 0px rgb(0, 0, 0);
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.4em;
+  color: white;
+  z-index: 1;
+  position: absolute;
+  top: 40%;
+  left: 22%;
+}
+
+.titulo-card:nth-child(1) {
+  text-shadow: 3px 1px 3px rgba(0, 0, 0, 1);
+}
+
+.imagem-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.imagem-card img {
+  width: 160px;
+  height: 165px;
+  border-radius: 50%;
+  position: absolute;
+  top: 8%;
+  border: 2px solid black;
+  z-index: 2;
+}
+
+.fundo-card-minecraft {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 346px;
+  height: 416px;
+  background-color: rgba(75, 54, 33, 1);
+  border-top: 2px solid black;
+  border-radius: 30px;
+  position: absolute;
+  top: 11%;
+  left: 0%;
+  z-index: 1;
+}
+
+.fundo-card-html {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 346px;
+  height: 416px;
+  background: linear-gradient(
+    90deg,
+    rgba(237, 125, 13, 1) 49%,
+    rgba(0, 102, 255, 1) 49%
+  );
+  border-top: 2px solid black;
+  border-radius: 30px;
+  position: absolute;
+  top: 11%;
+  left: 0%;
+}
+
+.fundo-card-js {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 346px;
+  height: 416px;
+  background-image: url(../img/javascript-fundo.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-top: 2px solid black;
+  border-radius: 30px;
+  position: absolute;
+  top: 11%;
+  left: 0%;
+  z-index: 1;
+}
+
+.container-texto {
+  position: absolute;
+  top: 51%;
+  width: 100%;
+  height: 100px;
+}
+
+.texto {
+  line-height: 1.2em;
+  font-size: 0.8em;
+  color: whitesmoke;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  text-shadow: 2px 1px 1px rgba(0, 0, 0, 1);
+  margin-left: 4%;
+}
+
+.texto-html-css {
+  line-height: 1.2em;
+  font-size: 0.8em;
+  color: whitesmoke;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  text-shadow: 1px 2px 2px rgba(0, 0, 0, 1);
+  margin-left: 4%;
+}
+
+.container-botao-card {
+  position: absolute;
+  top: 86%;
+  left: 34%;
+  width: 120px;
+  height: 100px;
+}
+
+.container-botao-card button {
+  border-radius: 10%;
+  width: 110px;
+  height: 40px;
+}
+
+.container-beneficios-card {
+  margin-top: 3%;
+  background-image: url(../img/fundo-sobre-nos.png);
+  filter: brightness(90%);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10%;
+  border-top: 2px rgb(225, 212, 212) solid;
+  border-bottom: 2px rgb(225, 212, 212) solid;
+  width: 100%;
+  height: 500px;
+  background-color: rgb(138, 138, 138);
+}
+
+.container-titulo-beneficio {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15%;
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  height: 100px;
+}
+
+.container-divs-beneficios {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 1000px;
+  height: 497px;
+}
+
+.titulo-beneficios {
+  font-size: 2.3em;
+  font-family: "Oswald", sans-serif;
+  font-weight: 800;
+  color: white;
+  text-shadow: 0px 0px 1px rgba(0, 0, 1, 1);
+}
+
+.beneficio1,
+.beneficio2,
+.beneficio3,
+.beneficio4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.titulo-beneficios-imagens {
+  line-height: 45px;
+  text-shadow: 1px 1px 0px #ffd700;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.3em;
+  color: white;
+}
+
+.beneficio1 {
+  width: 400px;
+  height: 249px;
+  border-right: 2px rgb(225, 212, 212) solid;
+  border-left: 4px rgb(225, 212, 212) solid;
+  border-top: 2px rgb(225, 212, 212) solid;
+  border-bottom: 1px rgb(225, 212, 212) solid;
+}
+
+.beneficio2 {
+  width: 400px;
+  height: 249px;
+  border-left: 2px rgb(225, 212, 212) solid;
+  border-right: 4px rgb(225, 212, 212) solid;
+  border-top: 2px rgb(225, 212, 212) solid;
+  border-bottom: 1px rgb(225, 212, 212) solid;
+}
+
+.beneficio3 {
+  width: 400px;
+  height: 249px;
+  border-right: 2px rgb(225, 212, 212) solid;
+  border-top: 2px rgb(225, 212, 212) solid;
+  border-left: 4px rgb(225, 212, 212) solid;
+  border-bottom: 2px rgb(225, 212, 212) solid;
+}
+
+.beneficio4 {
+  width: 400px;
+  height: 249px;
+  border-left: 2px rgb(225, 212, 212) solid;
+  border-right: 4px rgb(225, 212, 212) solid;
+  border-top: 2px rgb(225, 212, 212) solid;
+  border-bottom: 2px rgb(225, 212, 212) solid;
+}
+
+.beneficio1:hover {
+  background-color: rgb(67, 199, 155);
+  transition: 0.4s linear;
+}
+
+.beneficio2:hover {
+  background-color: rgb(107, 69, 195);
+  transition: 0.4s linear;
+}
+
+.beneficio3:hover {
+  background-color: rgb(60, 109, 173);
+  transition: 0.4s linear;
+}
+
+.beneficio4:hover {
+  background-color: rgb(199, 63, 63);
+  transition: 0.4s linear;
+}
+
+/* Main */
+
+/* Footer */
+
+footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10%;
+  width: 100%;
+  height: 12vh;
+  background-color: black;
+}
+
+.programinha-footer {
+  margin-left: 10%;
+  text-shadow: 2px 1px 0px rgba(0, 0, 0, 1);
+  font-family: 'Bebas Neue', 'cursive';
+    font-size: 1.1em;
+  font-size: 1.4em;
+  color: whitesmoke;
+}
+
+.desenvolvido {
+  font-size: 0.8em;
+  color: rgb(213, 199, 199);
+  font-family: "Ubuntu", sans-serif;
+  text-shadow: 2px 1px 1px rgba(0, 0, 0, 1);
+  margin-top: 1%;
+}
+
+
+.img-footer > img:hover{
+  cursor: pointer;
+  transition: 0.4 all;
+  background-color: #292927;
+  border-radius: 50%;
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 1040px) {
+  body {
+    background-image: url(../img/fundo-sobre-nos.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    backdrop-filter: brightness(70%);
+    font-size: 24px;
+    width: 100%;
+    height: 100%;
+  }
+
+  .topicos {
+    display: none;
+    flex-direction: row;
+    position: relative;
+    left: 6%;
+    margin-top: 3%;
+    margin-right: 45%;
+  }
+
+  span#burguer {
+    display: flex;
+  }
+
+  #itens {
+    display: none;
+  }
+
+  .nav1 {
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  nav p {
+    font-size: 1em;
+  }
+
+  .logo {
+    width: 48px;
+    height: 48px;
+    position: absolute;
+  }
+
+  h1,
+  h2 {
+    font-size: 2em;
+  }
+
+  p {
+    margin: 3px;
+    font-size: 0.7em;
+    color: whitesmoke;
+  }
+
+  .botoes {
+    width: 20%;
+    justify-content: center;
+    position: absolute;
+    left: 68%;
+  }
+
+  .titulo-sobre-nos {
+    margin-right: 10%;
+    margin-top: 6%;
+    font-size: 1.5em;
+    font-family: "Oswald", sans-serif;
+    font-weight: 800;
+    color: white;
+    text-shadow: 1px 0px 2px rgba(0, 0, 0, 1);
+  }
+
+  .container-sobre-nos {
+    width: 340px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5% 1% 1% 2%;
+  }
+
+  .texto-sobre-nos {
+    text-indent: 1em;
+    font-size: 0.8em;
+    font-weight: 800;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    color: white;
+    text-shadow: 1px 0px 2px rgba(0, 0, 0, 1);
+  }
+
+  .segundo-paragrafo {
+    margin-top: 14px;
+  }
+
+  .container-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    width: 100%;
+  }
+
+  .titulo-cursos {
+    width: 210px;
+    height: 40px;
+    font-size: 1.7em;
+    position: relative;
+  }
+
+  .linha-branca {
+    position: absolute;
+    width: 10px;
+    height: 5px;
+    background-color: white;
+    transition: 1s ease;
+  }
+
+  .card-kids,
+  .card-infantil,
+  .card-prodigio {
+    margin-bottom: 1%;
+    width: 298px;
+    height: 370px;
+    background-color: rgb(0, 0, 0);
+    transition: 0.1s linear;
+  }
+
+  .fundo-card-minecraft {
+    width: 296px;
+    height: 327px;
+    left: -1px;
+  }
+
+  .fundo-card-html {
+    width: 296px;
+    height: 327px;
+    left: -1px;
+  }
+
+  .fundo-card-js {
+    width: 296px;
+    height: 327px;
+    left: -1px;
+  }
+
+  .imagem-card img {
+    width: 145px;
+    height: 145px;
+    border-radius: 50%;
+    position: absolute;
+    top: 8%;
+    border: 2px solid black;
+    z-index: 2;
+  }
+
+  .titulo-card {
+    font-size: 1em;
+    color: white;
+    position: absolute;
+    top: 40%;
+    left: 28%;
+  }
+
+  .titulo-javascript-card {
+    filter: brightness(120%);
+    text-shadow: 2px 1px 1px rgba(0, 0, 0, 1);
+    font-family: "Ubuntu", sans-serif;
+    font-size: 1em;
+    color: white;
+    position: absolute;
+    top: 40%;
+    left: 17%;
+  }
+
+  .titulo-card-htmlcss {
+    filter: brightness(120%);
+    text-shadow: 2px 1px 0px rgb(0, 0, 0);
+    font-family: "Ubuntu", sans-serif;
+    font-size: 1em;
+    color: white;
+    z-index: 1;
+    position: absolute;
+    top: 40%;
+    left: 22%;
+  }
+
+  .texto {
+    line-height: 1.2em;
+    font-size: 0.6em;
+    margin-left: 4%;
+  }
+
+  .texto-html-css {
+    line-height: 1.2em;
+    font-size: 0.6em;
+    margin-left: 4%;
+  }
+
+  .container-botao-card button {
+    border-radius: 10%;
+    width: 98px;
+    height: 30px;
+  }
+
+  .titulo-beneficios {
+    margin-top: 5%;
+    font-size: 1.7em;
+  }
+
+  .container-beneficios-card {
+    margin-top: 15%;
+    margin-bottom: 1%;
+    border-top: 2px rgb(225, 212, 212) solid;
+    border-bottom: 2px rgb(225, 212, 212) solid;
+    width: 100%;
+    height: 500px;
+  }
+
+  .linha-branca-beneficios {
+    position: absolute;
+    right: 15%;
+    top: 81%;
+    margin-bottom: 1%;
+    height: 5px;
+    background-color: rgb(255, 255, 255);
+    transition: 1s ease;
+  }
+
+  .beneficio1 {
+    width: 400px;
+    height: 249px;
+    border-bottom: 2px rgb(225, 212, 212) solid;
+  }
+
+  .beneficio2 {
+    width: 400px;
+    height: 249px;
+    border: none;
+  }
+
+  .beneficio3 {
+    width: 400px;
+    height: 249px;
+    border-bottom: 2px rgb(225, 212, 212) solid;
+  }
+
+  .beneficio4 {
+    width: 400px;
+    height: 249px;
+    border: none;
+    border-bottom: 2px rgb(225, 212, 212) solid;
+  }
+
+  footer {
+    position: absolute;
+    top: 120%;
+  }
+
+  .desenvolvido {
+  font-size: 0.6em;
+  color: rgb(186, 178, 178);
+  font-family: "Ubuntu", sans-serif;
+  text-shadow: 2px 1px 1px rgba(0, 0, 0, 1);
+  margin-top: 1%;
+}
+
+.programinha-footer {
+  font-size: 1em;
+}
+
+.desenvolvido {
+  font-size: 0.5em;
+  color: rgb(213, 199, 199);
+  font-family: "Ubuntu", sans-serif;
+  text-shadow: 2px 1px 1px rgba(0, 0, 0, 1);
+  margin-top: 1%;
+}
+
+
+footer {
+  gap: 5%;
+}
+
+.programinha-footer {
+  margin-left: 10%;
+  text-shadow: 2px 1px 0px rgba(0, 0, 0, 1);
+  font-family: "Gagalin", sans-serif;
+  font-size: 0.7em;
+  color: whitesmoke;
+}
+
+.img-footer{
+   display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.img-footer img{
+  width: 25px;
+  height: 25px;
+}
+
+
+}

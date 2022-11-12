@@ -1,0 +1,256 @@
+/* Fontes */
+
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+/* Fim Fontes */
+
+
+/* Formatação Universal */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(../img/teste.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  font-size: 24px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  
+}
+
+button {
+  
+  text-shadow: 2px 1px 0px rgba(0, 0, 0, 1);
+  font-family: 'Oswald', sans-serif;
+  font-size: 0.7em;
+  color: white;
+  border: dashed black 1px;
+  background-color: rgba(45, 247, 17, 255);
+  height: 45px;
+  width: 155px;
+  margin-top: 5%;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: lightgreen;
+  transition: 0.3s all;
+}
+
+/* Fim Formatação Universal */
+
+/* Nav */
+.nav1 {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav p {
+  text-shadow: 2px 1px 0px rgba(0, 0, 0, 1);
+  font-family: 'Bebas Neue', 'cursive';
+  font-size: 1.1em;
+  color: whitesmoke;
+}
+
+.logo {
+  height: 5vh;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-left: 6%;
+}
+
+.topicos {
+  width: 50%;
+  height: 5vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 6%;
+  margin-left: 21%;
+}
+
+nav p:hover {
+  transform: scale(1.1);
+  transition: 0.2s all;
+}
+
+
+.botoes {
+  width: 20%;
+  height: 3vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 10px;
+  margin-right: 5%;
+  margin-bottom: 1%;
+}
+
+/* Fim Nav */
+
+
+/* Main */
+main {
+  height: 90vh;
+}
+
+.container-conteudo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+}
+
+.conteudo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1,
+h2 {
+  text-shadow: 2px 1px 0px rgba(0, 0, 0, 1);
+  font-family: 'Bebas Neue', cursive;
+  font-size: 3.2em;
+  color: whitesmoke;
+}
+
+
+
+p {
+  text-shadow: 2px 1px 0px rgba(0, 0, 0, 1);
+  font-family: 'Bebas Neue', cursive;
+  margin: 3px;
+  font-size: 1.4em;
+  color: whitesmoke;
+}
+
+/* Programinha */
+.amarelo {
+  color: rgb(216, 216, 29);
+}
+
+.verde {
+  color: rgba(45, 247, 17, 255);
+  margin: 0;
+  padding: 0;
+}
+
+.rosa {
+  color: rgb(175, 73, 107);
+}
+
+.laranja {
+  color: rgb(211, 150, 37);
+}
+
+.azul {
+  color: rgb(41, 41, 204);
+}
+
+/*Fim Main e Fim Programinha */
+
+/* Menu */
+span#burguer {
+  display: none;
+}
+
+#itens {
+  display: flex;
+}
+
+/* Fim Menu */
+
+
+/* Media Screnn */
+@media screen and (min-width: 320px) and (max-width: 920px) {
+
+  .topicos {
+    display: none;
+    flex-direction: row;
+    position: relative;
+    left: 6%;
+    margin-top: 3%;
+    margin-right: 45%;
+  }
+
+  span#burguer {
+    display: flex;
+  }
+
+  #itens {
+    display: none;
+  }
+
+
+  .nav1 {
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  nav p {
+    font-size: 1em;
+  }
+
+  .logo {
+    width: 48px;
+    height: 48px;
+    position: absolute;
+  }
+
+  h1,
+  h2 {
+    font-size: 2em;
+  }
+
+  p {
+    margin: 3px;
+    font-size: 0.7em;
+    color: whitesmoke;
+  }
+
+  .botoes {
+    width: 20%;
+    justify-content: center;
+    position: absolute;
+    left: 68%;
+  }
+
+  .container-conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+  }
+
+  .conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+}

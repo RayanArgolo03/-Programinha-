@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+
+<body onresize="mudarTamanho()">
+<nav class="nav1">
+    <div class="logo" id="div-abrir">
+        <span id="burguer" class="material-symbols-outlined" onclick="abrir()"><img src="../img/menu.png" alt=""
+                id="imagemTroca"></span>
+    </div>
+
+    <div class="topicos" id="itens">
+        <a href="../index.html">
+            <p>HOME</p>
+        </a>
+        <a href="sobre-nos.html">
+            <p>SOBRE</p>
+        </a>
+        <a href="contato.html">
+            <p>CONTATO</p>
+        </a>
+    </div>
+
+    <div class="botoes">
+        <button id="botao1"> <a href="cadasto.html">CADASTRO</a></button>
+        <button id="botao2"><a href="login.html">LOGIN</a></button>
+    </div>
+</nav>
+
+    <main class="main-login">
+        <div class="left-login">
+            <div class="lefttxt">
+                <h1>Faça Login<br>e comece a programar agora!</h1>
+            </div>
+        </div>
+
+        <div class="right-login">
+            <div class="card-login">
+                <h1>LOGIN</h1>
+                <form name="myform" onsubmit="return validateform()" action="">
+                    <div class="textfield">
+                        <label for="Email">Email</label>
+                        <input type="text" name="Email" required placeholder="Email" id="Email">
+                    </div>
+                    <div class="textfield">
+                        <label for="senha">Senha</label>
+                        <input type="password" name="senha" placeholder="Senha" id="password">
+                    </div>
+                    <button class="btn-login"><a href="./animação-logada.html">ENTRAR</a></button>
+                </form>
+
+                <a href="./recuperacao.html">Esqueceu sua Senha?</a>
+                <a>OU</a>
+                <a href="./cadasto.html">Cadastre-se!</a>
+            </div>
+        </div>
+    </main>
+
+
+    <script src="../script/login.js"></script>
+</body>
+
+</html>
